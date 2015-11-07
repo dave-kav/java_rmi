@@ -1,0 +1,30 @@
+To Run Java RMI's - DOS
+
+Open Command prompt
+goto Dir one above arith because we are using a package arith
+     the folder arith contains the java files
+
+javac arith/*.java
+rmic arith.ArithImpl
+start rmiregistry 2000
+start java -Djava.security.policy=arith/policy.txt arith.ArithServer 127.0.0.1:2000
+java -Djava.security.policy=arith/policy.txt arith.ArithClient 127.0.0.1:2000
+
+
+or using different machines
+start java -Djava.security.policy=arith/policy.txt arith.ArithServer 157.190.187.212:2000
+java -Djava.security.policy=arith/policy arith.ArithClient 157.190.187.212:2000
+
+
+//this worked when run from my office machine and a lab machine in the C corridoor
+
+
+Should work on a linux machine as well
+
+
+
+
+
+testing:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::)
+
+
