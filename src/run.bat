@@ -1,0 +1,1 @@
+java -Djava.security.policy=factory/policy.txt factory.Client 127.0.0.1:2000
